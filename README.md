@@ -49,6 +49,31 @@ npm run dev
   - リアルタイム保存 (Auto-save)
 - **スラッシュコマンド**: `/` でブロックメニューを呼び出し
 
+## 🚀 デプロイ
+
+### 1. クラウドプラットフォームへのデプロイ（推奨）
+
+**フロントエンド (Next.js)**
+
+- [Vercel](https://vercel.com) へのデプロイが最も簡単です。
+- リポジトリを連携し、Framework Preset に `Next.js` を選択します。
+- 環境変数 `NEXT_PUBLIC_API_URL` にバックエンドの URL を設定します。
+
+**バックエンド (NestJS) & データベース**
+
+- [Railway](https://railway.app) や [Render](https://render.com) が推奨されます。
+- **Railway**: GitHub リポジトリを連携するだけで、PostgreSQL データベースと NestJS サーバーを自動的に構築・デプロイできます。
+- 環境変数 (`DATABASE_URL`, `CORS_ORIGIN` 等) を適切に設定してください。
+
+### 2. Docker によるセルフホスティング
+
+本番環境用の `docker-compose.prod.yml` を作成し、マルチステージビルドを利用した Dockerfile を使用することを推奨します。
+
+```bash
+# 例: 本番ビルドを実行して起動
+docker-compose -f docker-compose.prod.yml up -d --build
+```
+
 ## 📝 ライセンス
 
 MIT
