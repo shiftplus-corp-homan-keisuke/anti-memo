@@ -190,7 +190,6 @@ function BlockNoteEditor({
               await createBlock.mutateAsync({
                 data: {
                   ...blockData,
-                  id: block.id,
                   content: blockData.content as any,
                   props: blockData.props as any,
                   pageId,

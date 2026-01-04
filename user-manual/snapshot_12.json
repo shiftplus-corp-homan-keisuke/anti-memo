@@ -1,0 +1,41 @@
+uid=22_0 RootWebArea "Memo - Notionライクメモアプリ" url="http://localhost:3100/"
+  uid=22_1 main
+    uid=22_2 heading "📝 Memo" level="1"
+    uid=22_3 button "📄 会議メモ"
+    uid=22_4 button "📄 会議メモ"
+    uid=22_5 button "📄 サンプルページ"
+    uid=22_6 button "📄 Demo Page"
+    uid=22_7 button "📄 無題"
+    uid=22_8 button "📄 Meeting Notes"
+    uid=22_9 button "📄 Feature Showcase"
+    uid=22_10 button "📄 無題"
+    uid=22_11 button "📄 無題"
+    uid=22_12 button "📄 Meeting Notes"
+    uid=22_13 button "📄 Feature Showcase"
+    uid=22_14 button "📄 無題"
+    uid=22_15 button "📄 無題"
+    uid=22_16 button "📄 Meeting Notes"
+    uid=22_17 button "📄 Feature Showcase"
+    uid=22_18 button "📄 無題"
+    uid=22_19 button "📄 無題"
+    uid=22_20 button "📄 Meeting Notes"
+    uid=22_21 button "📄 無題"
+    uid=22_22 button "📄 無題"
+    uid=22_23 button "新規ページ"
+    uid=22_24 textbox "無題" value="会議メモ"
+    uid=22_25 textbox autocomplete="list" focusable focused haspopup="listbox" multiline value="これはテスト本文です。
+
+/
+
+
+"
+      uid=22_26 paragraph
+        uid=22_27 StaticText "これはテスト本文です。"
+      uid=22_28 paragraph
+        uid=22_29 StaticText "/"
+      uid=22_30 paragraph
+    uid=22_31 generic
+      uid=22_32 listbox orientation="vertical"
+  uid=22_33 button "Open Next.js Dev Tools" expandable haspopup="menu"
+  uid=22_34 button "Open issues overlay"
+  uid=22_35 button "Collapse issues badge"

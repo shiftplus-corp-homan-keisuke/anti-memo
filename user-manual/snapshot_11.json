@@ -1,0 +1,39 @@
+uid=21_0 RootWebArea "Memo - Notionライクメモアプリ" url="http://localhost:3100/"
+  uid=21_1 main
+    uid=21_2 heading "📝 Memo" level="1"
+    uid=21_3 button "📄 会議メモ"
+    uid=21_4 button "📄 会議メモ"
+    uid=21_5 button "📄 サンプルページ"
+    uid=21_6 button "📄 Demo Page"
+    uid=21_7 button "📄 無題"
+    uid=21_8 button "📄 Meeting Notes"
+    uid=21_9 button "📄 Feature Showcase"
+    uid=21_10 button "📄 無題"
+    uid=21_11 button "📄 無題"
+    uid=21_12 button "📄 Meeting Notes"
+    uid=21_13 button "📄 Feature Showcase"
+    uid=21_14 button "📄 無題"
+    uid=21_15 button "📄 無題"
+    uid=21_16 button "📄 Meeting Notes"
+    uid=21_17 button "📄 Feature Showcase"
+    uid=21_18 button "📄 無題"
+    uid=21_19 button "📄 無題"
+    uid=21_20 button "📄 Meeting Notes"
+    uid=21_21 button "📄 無題"
+    uid=21_22 button "📄 無題"
+    uid=21_23 button "新規ページ"
+    uid=21_24 textbox "無題" value="会議メモ"
+    uid=21_25 textbox autocomplete="list" focusable focused haspopup="listbox" multiline value="これはテスト本文です。
+
+/
+
+
+"
+      uid=21_26 paragraph
+        uid=21_27 StaticText "これはテスト本文です。"
+      uid=21_28 paragraph
+        uid=21_29 StaticText "/"
+      uid=21_30 paragraph
+    uid=21_31 generic
+      uid=21_32 listbox orientation="vertical"
+  uid=21_33 button "Open Next.js Dev Tools" expandable haspopup="menu"
