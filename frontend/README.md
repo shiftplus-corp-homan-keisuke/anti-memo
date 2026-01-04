@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Notion ライクメモアプリ (フロントエンド)
 
-## Getting Started
+Next.js と BlockNote を使用して構築された、Notion のようなリッチテキスト編集機能を持つメモアプリケーションのフロントエンドです。
 
-First, run the development server:
+## 🚀 技術スタック
+
+- **フレームワーク**: [Next.js 16](https://nextjs.org) (App Router)
+- **エディタ**: [BlockNote](https://www.blocknotejs.org/) (Notion-style block editor)
+- **UI コンポーネント**: [shadcn/ui](https://ui.shadcn.com/)
+- **スタイリング**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **API クライアント**: [Orval](https://orval.dev/) + [TanStack Query](https://tanstack.com/query/latest)
+- **アイコン**: [Lucide React](https://lucide.dev/)
+
+## 🛠️ 開発環境のセットアップ
+
+### 前提条件
+
+バックエンドサーバーが `http://localhost:3101` で稼働している必要があります。
+
+### インストールと起動
+
+依存関係をインストールし、開発サーバーを起動します：
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3100](http://localhost:3100) を開いて確認してください。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 プロジェクト構造
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app`: Next.js App Router ページ
+- `src/components`: UI コンポーネントおよび機能コンポーネント
+  - `page-editor.tsx`: BlockNote エディタ統合部分
+  - `page-sidebar.tsx`: サイドバーナビゲーション
+- `src/lib/api`: Orval によって生成された API クライアントコード
+- `src/hooks`: カスタムフック
 
-## Learn More
+## 🔄 API コード生成
 
-To learn more about Next.js, take a look at the following resources:
+バックエンドの OpenAPI 仕様から API クライアントを自動生成する場合：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run generate:api
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+※ `package.json` にスクリプトが追加されている前提ですが、現状は `npx orval` 等で実行します。
